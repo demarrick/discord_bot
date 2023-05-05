@@ -1,5 +1,4 @@
 import discord
-from playsound import playsound
 import matplotlib.pyplot as plt
 import pandas as pd
 import yfinance
@@ -11,9 +10,10 @@ from discord import FFmpegPCMAudio
 import youtube_dl
 import ctypes.util
 import asyncio
-
-token='MTEwMjE4NzMwMTYwNzU4MzgwNA.GSdFIR.d-EIi2R3Ws9I9yzqOsUjSoQ2xLwUZ2B1h3iH40'
-
+import os
+from dotenv import load_dotenv
+load_dotenv('/Users/riccardodemarco/Desktop/discord_bot/bot1.env')
+token=os.environ.get('DISCORD_TOKEN')
 libopus_path='/opt/homebrew/lib/libopus.dylib'
 discord.opus.load_opus(libopus_path)
 intents = discord.Intents.default()
@@ -117,4 +117,6 @@ async def on_voice_state_update(member, before, after):
           source=discord.PCMVolumeTransformer(source, volume=volume)
           sound.play(source, after=lambda e: asyncio.run_coroutine_threadsafe(sound.disconnect(), client.loop))
 
+print(token)
 client.run(token)
+
