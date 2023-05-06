@@ -12,8 +12,14 @@ import ctypes.util
 import asyncio
 import os
 from dotenv import load_dotenv
-load_dotenv('/Users/riccardodemarco/Desktop/discord_bot/bot1.env')
-token=os.environ.get('DISCORD_TOKEN')
+load_dotenv('bot1.env')
+token=os.getenv('bot1.env')
+#token=open('/Users/riccardodemarco/Desktop/discord_bot/TOKEN', 'r').read()
+#dir_path = os.path.dirname(os.path.realpath(__file__))
+#token_file = os.path.join(dir_path, "TOKEN")
+#with open(token_file, 'r') as f:
+#    token = f.read()
+
 libopus_path='/opt/homebrew/lib/libopus.dylib'
 discord.opus.load_opus(libopus_path)
 intents = discord.Intents.default()
