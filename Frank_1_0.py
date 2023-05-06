@@ -7,12 +7,12 @@ yfinance.pdr_override()
 from datetime import date, timedelta
 import seaborn as sns
 from discord import FFmpegPCMAudio
-import youtube_dl
-import ctypes.util
+#import youtube_dl
+#import ctypes.util
 import asyncio
 import os
-from dotenv import load_dotenv
-load_dotenv('bot1.env')
+#from dotenv import load_dotenv
+#load_dotenv('bot1.env')
 token=os.getenv('bot1.env')
 #token=open('/Users/riccardodemarco/Desktop/discord_bot/TOKEN', 'r').read()
 #dir_path = os.path.dirname(os.path.realpath(__file__))
