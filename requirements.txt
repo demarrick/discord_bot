@@ -1,1 +1,11 @@
 alabaster==0.7.13
+discord==2.2.3
+matplotlib==3.5.2
+pandas==1.4.4
+yfinance==0.2.12
+pandas_datareader==0.10.0
+datetime==5.0
+seaborn==0.11.2
+asyncio 3.4.3
+os
+python-dotenv==1.0.0
