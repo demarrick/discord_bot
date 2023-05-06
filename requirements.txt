@@ -1,5 +1,5 @@
 alabaster==0.7.13
-discord==2.3.3
+discord==2.2.3
 matplotlib==3.5.3
 yfinance==0.3.2
 pandas_datareader==0.10.1
