@@ -22,7 +22,7 @@ token=os.getenv('bot1.env')
 
 #libopus_path='/opt/homebrew/lib/libopus.dylib'
 libopus_path='libopus.dylib'
-discord.opus.load_opus(libopus_path)
+discord.opus.load_opus()
 intents = discord.Intents.default()
 intents.members = True 
 intents.messages=True
