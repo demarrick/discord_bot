@@ -20,9 +20,8 @@ token=os.getenv('bot1.env')
 #with open(token_file, 'r') as f:
 #    token = f.read()
 
-#libopus_path='/opt/homebrew/lib/libopus.dylib'
-libopus_path='libopus.dylib'
-discord.opus.load_opus()
+libopus_path='/opt/homebrew/lib/libopus.dylib'
+discord.opus.load_opus(libopus_path)
 intents = discord.Intents.default()
 intents.members = True 
 intents.messages=True
